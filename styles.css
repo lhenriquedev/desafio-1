@@ -1,0 +1,140 @@
+:root {
+  --blue: #3ea1db;
+  --blue-dark: #574ae8;
+  --white: #fff;
+
+  --title: #313131;
+  --text: #b6b6b6;
+
+  --linear: linear-gradient(90deg, #574ae8 0%, #3ea1db 100%);
+}
+
+/* 
+font-family: 'Inter', sans-serif;
+font-family: 'Lexend Deca', sans-serif; 
+*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Lexend Deca', sans-serif;
+  background: #f3f5f7;
+}
+
+.container {
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+}
+
+header {
+  height: 12.5rem;
+  background: var(--linear);
+  padding: 3rem 0;
+}
+
+header .menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 2.5rem;
+}
+
+header .logo {
+  text-decoration: none;
+}
+
+header .logo,
+header p {
+  font-size: 1.125rem;
+  line-height: 22.5px;
+
+  color: var(--white);
+}
+
+.searchContainer {
+  width: 100%;
+  display: inline-flex;
+  flex: 1 1 300px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.searchIcon {
+  padding: 0.75rem;
+  background: rgba(255, 255, 255, 0.2);
+  color: var(--white);
+}
+
+.searchBox {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  outline: 0;
+  color: var(--white);
+
+  padding: 0.75rem 0;
+}
+
+.searchBox::placeholder {
+  color: var(--white);
+  font-size: 1rem;
+}
+
+section {
+  margin-top: 3.125rem;
+}
+
+.post {
+  box-shadow: 0px 0px 10px rgba(19, 19, 31, 0.05);
+  background: var(--white);
+  padding: 1rem;
+
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+
+  margin-bottom: 1.5625rem;
+}
+
+.post .meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.6875rem;
+}
+
+.post .meta p {
+  color: var(--text);
+}
+
+.post .meta .heartIcon {
+  color: var(--blue-dark);
+}
+
+.post .title {
+  margin-bottom: 0.625rem;
+  color: var(--title);
+}
+
+.post .text {
+  color: var(--text);
+  line-height: 26px;
+  font-weight: 400;
+}
+
+/* =============== Media Queries ================= */
+/* extra large devices: 1200px > */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1120px;
+    margin: 0 auto;
+  }
+
+  section {
+    margin-top: 6.25rem;
+  }
+} ;
